@@ -1,0 +1,32 @@
+/*need global variables*/
+
+/*wildcard to set all margin to zero*/
+* {
+    margin: 0px;
+}
+
+
+.flex {
+    display: flex;
+}
+/*WHEN I resize the page or view the site on various screens and devices
+THEN I am presented with a responsive layout that adapts to my viewport*/
+
+.header div {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.header div h1{
+    flex-wrap: nowrap;
+        
+}
+.header div nav {
+    
+    
+}
+.header div nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
