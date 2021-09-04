@@ -37,18 +37,8 @@ THEN I am presented with a responsive layout that adapts to my viewport*/
     
     
 }
-
-.bio {
-    display:flex;
-    box-sizing: content-box;
-    height: 150px;
-    width: 270px;
-    background-color: magenta;
-    z-index: 1;
-    position: absolute;
-    margin: 0;
-    top: 120px;
-    left: 220px;
+.projects {
+    width: -webkit-fill-available;
 }
 
 .projects div {
@@ -60,4 +50,39 @@ THEN I am presented with a responsive layout that adapts to my viewport*/
 }
 .projects div div {
     justify-content: center;
+}
+
+.card {
+    display:flex;    
+    height: 150px;
+    width: 270px;
+    background-color: black;
+    z-index: 1;
+    position: absolute;
+    margin: 0;
+    top: 120px;
+    left: 220px;
+    justify-content: left;
+}
+.card img {    
+    height: 100px;
+    width: 70px;      
+}
+
+picture {
+    display: flex;
+    align-items: center;
+}
+
+address {
+    margin: 0;
+    font-family: cursive;    
+}
+address h3 {
+    white-space:nowrap;
+    color: silver;
+}
+address p {
+    font-size: smaller;
+    color: silver;
 }
