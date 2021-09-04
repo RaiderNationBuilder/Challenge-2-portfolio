@@ -3,11 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Pat's Pics!</title>
 </head>
     <main>
-        <header>
+        <header class="container header">
             <div>
                 <div>
                     <h1>Patrick Sebstead</h1>
@@ -15,12 +15,12 @@
                 <div>
                     <nav><!--WHEN I click one of the links in the navigation
                         THEN the UI scrolls to the corresponding section-->
-                        <ul class="flex">
+                        <ul class="container">
                             <li><a href="#">Bio</a></li>
-                            <li><a href="#">Link to project 2</a></li>
-                            <li><a href="#">Link to project 3</a></li>
-                            <li><a href="#">Link to project 4</a></li> 
-                            <li><a href="#">Link to project 5</a></li>                   
+                            <li><a href="#">Projects</a></li>
+                            <!-- <li><a href="#"></a></li>
+                            <li><a href="#"></a></li> 
+                            <li><a href="#"></a></li>  -->                  
                         </ul>
                     </nav>
                 </div>
@@ -30,19 +30,24 @@
                 and how to contact them-->
 
         </header>
-        <section class="flex">
+        <section class="container projects">
             <!--GIVEN I need to sample a potential employee's previous work-->
                 
                 
             <div>
                 <!--WHEN I am presented with the developer's first application
                 THEN that application's image should be larger in size than the others-->
-                <img src="/assets/images/02-run-buddy.jpg" alt="Link to runbuddy website"><a href=""
+                <a href="https://raidernationbuilder.github.io/run-buddy/"><img src="assets/images/02-run-buddy.jpg" alt="Link to runbuddy website" width="300" height="200"></a>
+                <div>
+                    <!--WHEN I click on the images of the applications
+                    THEN I am taken to that deployed application-->
+                    <a href="https://raidernationbuilder.github.io/run-buddy/"><img src="assets/images/02-portfolio-1.jpg" alt="Link to runbuddy website" width="220" height="150"></a>
+                    <a href="https://raidernationbuilder.github.io/run-buddy/"><img src="assets/images/02-portfolio-2.jpg" alt="Link to runbuddy website" width="220" height="150"></a>
+                    <a href="https://raidernationbuilder.github.io/run-buddy/"><img src="assets/images/02-portfolio-3.jpg" alt="Link to runbuddy website" width="220" height="150"></a>
+                    <a href="https://raidernationbuilder.github.io/run-buddy/"><img src="assets/images/02-portfolio-4.jpg" alt="Link to runbuddy website" width="220" height="150"></a>
+                </div>
             </div>
-            <div>
-                <!--WHEN I click on the images of the applications
-                THEN I am taken to that deployed application-->
-            </div>
+            
                 
             
         </section>

@@ -2,31 +2,42 @@
 
 /*wildcard to set all margin to zero*/
 * {
-    margin: 0px;
+    margin: 3% 3%;
 }
 
 
-.flex {
+.container {
     display: flex;
+    background-color:lightgrey;
 }
+
+
 /*WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport*/
 
 .header div {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: space-between;    
 }
 .header div h1{
     flex-wrap: nowrap;
         
 }
 .header div nav {
+    display: flex;
+    align-items: center;
+    background-color:lightskyblue;
+}
+.header div nav ul li {
+    
+    flex-wrap: wrap;
+    justify-content: right;
+    margin-right: 25%;
     
     
 }
-.header div nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.projects:first-child {
+    width: 100%;
+    justify-content: center;
 }
