@@ -12,43 +12,67 @@
                 <div>
                     <h1>Patrick Sebstead</h1>
                 </div>
-                <div>
+                <div class="nav">
                     <nav><!--WHEN I click one of the links in the navigation
                         THEN the UI scrolls to the corresponding section-->
                         <ul class="container">
-                            <li><a href="#">Bio</a></li>
-                            <li><a href="#">Projects</a></li>
+                            <li><a href="#bio">Bio</a></li>
+                            <li><a href="#projects">Projects</a></li>
                             <!-- <li><a href="#"></a></li>
                             <li><a href="#"></a></li> 
                             <li><a href="#"></a></li>  -->                  
                         </ul>
                     </nav>
                 </div>
-            </div>
-                <!--WHEN I load their portfolio
-                THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, 
-                and how to contact them-->                
+            </div>                        
         </header>
         
         <section class="container">
             <!--GIVEN I need to sample a potential employee's previous work-->
-                
-                
-            <div class="projects">
+            <div><h2>BIOGRAPHY</h2>  </div>
+            <section class="container bio" id="bio">
+                <!--WHEN I load their portfolio
+                THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, 
+                and how to contact them-->  
+                <picture>
+                    <img src="assets/images/selfie.jpg" alt="business selfie">
+                </picture>                                
+                <article>
+                    <h3>About Me</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                       Id dolor laboriosam dignissimos quisquam, facilis placeat. 
+                       Hic dicta mollitia aliquid amet, debitis tenetur iure quos adipisci 
+                       accusantium molestiae asperiores culpa. Tenetur?</p>
+                    <h3>My Skills</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                       Quis cupiditate nulla beatae aperiam debitis porro sequi 
+                       ipsa eos rem! Labore sapiente suscipit ipsum officiis reprehenderit.
+                       Autem, obcaecati. Ut, eaque nisi.</p>
+                    <address>
+                        <h3>Patrick Sebstead</h3>
+                        <p>123 Road Street</p>
+                        <p>City, State 65495</p>
+                        <p>email: myemail@yahoo.com</p>
+                        <p>phone: (958) 654-5555</p>
+                    </address>
+                </article>
+            </section>                
+            <section class="projects" id="projects">
                 <!--DONE
                 WHEN I am presented with the developer's first application
                 THEN that application's image should be larger in size than the others-->
-                <a href="https://raidernationbuilder.github.io/run-buddy/"><img src="assets/images/02-run-buddy.jpg" alt="Link to runbuddy website" width="300" height="200"></a>
+                <h2>PROJECTS</h2> 
+                <a href="https://raidernationbuilder.github.io/run-buddy/" target="blank"><img src="assets/images/02-run-buddy.jpg" alt="Link to runbuddy website" width="300" height="200"></a>
                 <div>
                     <!--WHEN I click on the images of the applications
                     THEN I am taken to that deployed application-->
-                    <a href="https://raidernationbuilder.github.io/run-buddy/"><img src="assets/images/02-portfolio-1.jpg" alt="Link to runbuddy website" width="220" height="150"></a>
-                    <a href="https://raidernationbuilder.github.io/run-buddy/"><img src="assets/images/02-portfolio-2.jpg" alt="Link to runbuddy website" width="220" height="150"></a>
-                    <a href="https://raidernationbuilder.github.io/run-buddy/"><img src="assets/images/02-portfolio-3.jpg" alt="Link to runbuddy website" width="220" height="150"></a>
-                    <a href="https://raidernationbuilder.github.io/run-buddy/"><img src="assets/images/02-portfolio-4.jpg" alt="Link to runbuddy website" width="220" height="150"></a>
+                    <a href="https://raidernationbuilder.github.io/run-buddy/"target="blank"><img src="assets/images/02-portfolio-1.jpg" alt="Link to runbuddy website" ></a>
+                    <a href="https://raidernationbuilder.github.io/run-buddy/"target="blank"><img src="assets/images/02-portfolio-2.jpg" alt="Link to runbuddy website" ></a>
+                    <a href="https://raidernationbuilder.github.io/run-buddy/"target="blank"><img src="assets/images/02-portfolio-3.jpg" alt="Link to runbuddy website" ></a>
+                    <a href="https://raidernationbuilder.github.io/run-buddy/"target="blank"><img src="assets/images/02-portfolio-4.jpg" alt="Link to runbuddy website" ></a>
                 </div>
-            </div>
-            <div class="card">
+            </section>
+            <!-- <div class="card">
                 <picture>
                     <img src="assets/images/selfie.jpg" alt="business selfie">
                 </picture>           
@@ -59,10 +83,8 @@
                     <p>email: myemail@yahoo.com</p>
                     <p>phone: (958) 654-5555</p>
                 </address>
-            </div>
-                
-            
-        </section>
+            </div> -->                       
+        </section>         
         <footer>
 
         </footer>
