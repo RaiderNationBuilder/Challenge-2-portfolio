@@ -155,19 +155,12 @@ address p {
 
 /*WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport*/
+
 /*start of media queries styling*/
-
-@media screen and (max-width: 980px) {
-
-}
-@media screen and (max-width: 768px) {
-
-
-}
 @media screen and (max-width: 575px) {
     .main {
         background-attachment: fixed;
-        background-image: url("assets/images/spacepic.jpg");
+        background-image: url('https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569__480.jpg');
         background-size: cover;    
         background-position: 80%;
         background-position: center;
@@ -179,6 +172,17 @@ THEN I am presented with a responsive layout that adapts to my viewport*/
         position: -webkit-sticky;
         top: 0;
         z-index: -1;
+    }
+
+    .header div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header div div h1 {
+        font-size: 2.365em;
+        margin-top: 0;
+        padding-left: .65em;
     }
 
     .nav nav ul > li {
@@ -209,10 +213,166 @@ THEN I am presented with a responsive layout that adapts to my viewport*/
     }
 
     .projects div , .projects a {
-        display: flex;
-        flex-wrap: wrap;
-        flex-basis: 25%;
+        flex-direction: column;
         align-items: stretch;
-        margin: 0 10%;
-    }    
+    } 
+    
+    .projects a img {
+        width: 220px;
+        height: auto;
+        padding: .5em 0 0 3em;
+    }
+}
+
+@media screen and (max-width: 540px){
+    .header {
+        padding-left: 3.5em;
+    }
+
+    .nav nav ul > li {        
+        font-size: 1.5em;
+        margin: 0;
+        padding-left: .5em;
+    }
+
+    .projects :not(h2) {
+        margin: 1em 0 0 7em;
+    }
+
+    .projects a img {
+        width: 220px;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .projects div a{
+        margin-left: 2em;
+    }
+
+    .projects div a img {
+        margin: 0;
+        width: 160px;
+    }
+}
+
+@media screen and (max-width: 415px){
+    .header{
+        padding-left: 0;
+    }
+
+    .projects :not(h2) {
+        margin: 1em 0 0 3em;
+    }
+}
+
+@media screen and (max-width: 376px){
+    .header{
+        padding: 0 0 1em 0em;
+    }
+
+    .header div div h1 {
+        font-size: 2.2em;        
+    }
+
+    .nav nav ul {       
+        padding: .5em 0 0 3em;        
+    }
+
+    .nav nav ul > li {       
+        padding-left: 1em;
+        font-size: 1.157em;
+        margin: 0;
+    }
+    
+    .container{
+        margin-left: 0;
+    }
+
+    h2{
+        margin-left: 0;
+    }
+
+    .bio {
+        margin-right: 1em;
+    }
+
+    .projects :not(h2) {
+        padding-left: .5em;
+        margin: 1em 0 0 0;
+    }
+   
+    .projects a img {
+        padding: 0em;
+        margin-left: 1.5em;
+    }
+
+    .projects div {
+        padding-left: 1.4em;
+    }
+}
+
+@media screen and (max-width: 321px){
+    .header div div h1 {
+        font-size: 2em;
+        padding: 0;
+    }
+
+    .nav nav ul {
+        padding: 0;
+    }
+
+    .bio {
+        margin: 1em .75em 0 0;
+    }
+
+    .projects :not(h2) {
+        padding: 0;       
+    }
+
+    .projects a img {
+        margin-left: .75em;
+    }
+
+    .projects div a {
+        margin-left: 2.5em;
+    }
+}
+
+@media screen and (max-width: 281px){
+    .header div div h1 {
+        font-size: 1.75em;
+        padding: 0;
+    }
+
+    .nav nav ul {
+        padding-left: 0;
+    }
+
+    .nav nav ul > li {
+        padding-left: 1em;
+        font-size: 1em;
+        margin: 0;
+    }
+
+    .bio {
+        margin-right: 1.5em;
+    }
+
+    h2 {
+        margin-right: 1em;
+    }
+
+    .projects :not(h2) {
+        padding: 0;
+        margin: 0;
+    }
+
+    .projects a img {
+        margin: 0 1em 0 0;
+    }
+
+    .projects div > a {
+        margin-top: 1em;
+    }
 }
